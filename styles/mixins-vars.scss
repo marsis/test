@@ -1,0 +1,45 @@
+$font1:'bariol_regularregular';
+$font2:'Droid Sans';
+
+
+@mixin title {
+   font-family: $font1;
+font-size: 40px;
+font-weight: 600;
+line-height: 1px;
+letter-spacing: 4px;
+margin-top: 29px;
+padding-left: 7px;
+}
+
+@mixin title-span{
+	font-family: $font1;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1px;
+	letter-spacing: 2px;
+	margin-top: 10px;
+	padding-left: 7px;
+}
+
+@mixin buttons{
+width: 93px;
+height: 33px;
+background-color: white;
+border-radius: 2px;
+text-shadow: 0 0 1px rgba(0, 0, 0, 0.06);
+font-family: $font1;
+font-size: 21px;
+font-weight: 600;
+text-decoration: none;
+letter-spacing: 2px;
+position: absolute;
+top: 30px;
+right: 10px;
+}
+
+@mixin footer{
+	color: white;
+	font-family:$font2;
+	position: absolute;
+}

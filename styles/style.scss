@@ -1,0 +1,154 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "mixins-vars";
+
+
+.pre-wrapper{
+	display: table;
+	width: 100%;
+}
+.wrapper{
+	height: 700px;
+	text-align: center;
+	display: table-cell; 
+	vertical-align: middle;
+}
+body{
+	background-color: #f9f9f9;
+}
+.title{
+	border-bottom: 1px solid #d8d8d8;
+}
+.first-block, .second-block, .third-block {
+	width: 300px;
+	display: inline-block;
+	vertical-align: bottom;
+	background-color: #f0f0f0;
+	margin: 0 10px;
+}
+.first-title, .third-title{
+	height: 109px;
+	background-color: #fff;
+	border-radius: 5px 5px 0 0;
+}
+.second-title{
+	height: 140px;
+	background-color: #fff;
+	border-radius: 5px 5px 0 0;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.03);
+}
+.content{
+	border-top: 1px solid #fff;
+	position: relative;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	li{
+		height: 45px;
+		border-bottom: 1px solid #d8d8d8;
+		border-top: 1px solid #fff;
+		list-style: none;
+		color: #616161;
+		font-family: $font1;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 50px;
+		letter-spacing: 1px;
+	}
+	li:first-child{
+		border-top: none;
+		height: 47px;
+	}
+	li:last-child{
+	height: 50px;
+	}
+	li:nth-child(2){
+		height: 48px;
+	}
+}
+.second:before {
+ content: "";
+ display: block;
+ background: url("../img/icon.png") no-repeat;
+ position: absolute;
+ top: -16px;
+ left: 706px;
+ width: 30px;
+ height: 30px;
+ margin: 0 6px 0 0;
+}
+.first-footer, .second-footer, .third-footer{
+	height: 94px;
+	background-color: #616161;
+	border-radius:0 0 5px 5px ;
+	border-top: 1px solid #fff;
+	display: inline-block;
+	position: relative;
+}
+.second-footer{
+	background-color:#eb4f4e;
+}
+
+.first-title h3, .third-title h3{
+color: #616161;
+@include title;
+}
+.second-title h3{
+	color: #eb4f4e;
+	@include title;
+}
+.first-title span, .third-title span{
+color: #eb4f4e;
+@include title-span;
+}
+.second-title span{
+color: #232324;
+@include title-span;
+}
+.copy{
+@include footer;	
+font-size: 32px;
+font-weight: 600;
+top: 25px;
+left: 10px;
+}
+.figure{
+@include footer;	
+font-size: 64px;
+font-weight: 700;
+left: 30px;
+top: 10px;
+}
+.slash{
+@include footer;
+font-size: 25px;
+font-weight: 400;
+top: 41px;
+left: 103px;
+}
+.order-button1, .order-button3{
+@include buttons;
+color: #616161;
+}
+.order-button2{
+@include buttons;
+color: #eb4f4e;
+}
+.order-button1:hover, .order-button3:hover {
+	background-color: #eb4f4e ;
+}
+.order-button2:hover{
+	background-color: #616161;
+}
+.check-here{
+display: block;
+margin-top: 27px;
+color: #eb4f4e;
+font-family: $font1;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 1.2px;
+}
